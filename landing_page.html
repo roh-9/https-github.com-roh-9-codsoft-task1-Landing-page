@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #e0f7e9;
+    }
+    .hero h1 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; color: #333; }
+    .btn {
+      background: #4CAF50;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover { background: #45a049; }
+
+    /* Features Section for Mobile */
+    section.features {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+      background: white;
+    }
+    .feature {
+      background: #f0f0f0;
+      padding: 30px 20px;
+      margin: 10px;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+    .feature:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      background: #c9f7dd;
+    }
+    .feature img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    /* Product Sale Section */
+    section.product {
+      background: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section.product h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .product-card {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+    .product-card img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 20px;
+      text-align: left;
+    }
+    .product-info h3 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    .product-info p {
+      margin: 0 0 15px;
+      font-size: 16px;
+      color: #555;
+    }
+    .product-info .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #4CAF50;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Us Section */
+    section.contact {
+      background: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section.contact h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      resize: vertical;
+    }
+    .contact-form button {
+      background: #4CAF50;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #45a049;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Website</h1>
+</header>
+
+<div class="hero">
+  <h1>Experience Next‑Gen Mobile in India!</h1>
+  <p>शक्तिशाली वैशिष्ट्यांसह तुमचा स्मार्टफोन अनुभव नवा बनवूया.</p>
+  <a href="#features" class="btn">Explore Features</a>
+</div>
+
+<section class="features" id="features">
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/100/000000/camera.png" alt="Camera Icon">
+    <h3>High-Resolution Camera</h3>
+    <p>Capture stunning photos with our 48MP Ultra HD lens.</p>
+  </div>
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/100/000000/battery-level.png" alt="Battery Icon">
+    <h3>Long-Lasting Battery</h3>
+    <p>Enjoy up to 48 hours of battery life on a single charge.</p>
+  </div>
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/100/000000/monitor.png" alt="Display Icon">
+    <h3>Vibrant Display</h3>
+    <p>Experience vivid colors on a 6.5" OLED screen.</p>
+  </div>
+</section>
+
+<section class="product" id="product">
+  <h2>Special Offer: Sale Mobile</h2>
+  <div class="product-card">
+    <img src="https://pngimg.com/uploads/smartphone/smartphone_PNG101498.png" alt="Mobile Phone">
+    <div class="product-info">
+      <h3>XYZ Smartphone Pro</h3>
+      <p>The latest XYZ Smartphone Pro with 6.5" OLED display, 128GB storage, and 48MP camera.</p>
+      <div class="price">₹24,999</div>
+      <a href="#contact" class="btn">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form" action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Rohan D Langote Landing Page</p>
+</footer>
+
+</body>
+</html>
